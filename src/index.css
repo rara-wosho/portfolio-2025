@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-primary-linear: linear-gradient(
+    30deg,
+    rgb(142, 28, 28) 0%,
+    rgb(52, 11, 129) 100%
+  );
+
+  --bg-secondary: rgba(17, 25, 40, 1);
+  --bg-black: rgb(10, 10, 10);
+  --bg-white: rgb(250, 250, 250);
+  --text-white: rgb(250, 250, 250);
+  --text-white-1: rgb(220, 220, 220);
+  --text-black: rgb(30, 30, 30);
+
+  --fs-7: 0.85rem;
+
+  --border-width-1: 1px;
+  --border-secondary: 0.5px solid rgba(128, 128, 128, 0.1);
+}
+
+* {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-white);
+}
+
+.text-montserrat {
+  font-family: "Montserrat", serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url("4844484.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  isolation: isolate;
+  position: relative;
+}
+
+body::after {
+  inset: 0;
+  position: fixed;
+  content: "";
+  background-color: var(--bg-black);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.hero-section {
+  min-height: 100vh;
+}
+
+.introduction .intro-profile {
+  object-fit: cover;
+  aspect-ratio: 5/5;
+  width: 80px;
+}
+.introduction .intro-name {
+  font-size: 1rem;
+}
+.introduction .intro-details {
+  font-size: 0.7rem;
+}
+.intro-btns {
+  font-size: 0.6rem;
+}
+
+.outline-btn {
+  border: var(--border-width-1) solid rgba(128, 128, 128, 0.612) !important;
+  box-sizing: content-box;
+  position: relative;
+  color: var(--text-white);
+}
+
+.primary-btn {
+  border: 1px solid transparent;
+}
+
+.project-card .project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(12, 18, 30) 0%,
+    rgba(12, 18, 30, 0.7) 50%,
+    rgba(64, 27, 143, 0) 100%
+  );
+}
+/* UTILITY CLASS  */
+.fs-7 {
+  font-size: var(--fs-7);
+}
+
+.border-secondary {
+  border: var(--border-secondary) !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary) !important;
+}
+.bg-primary-linear {
+  background: var(--bg-primary-linear);
+}
+
+.hover-glow {
+  transition: 0.3s;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.text-white {
+  color: var(--text-white) !important;
+}
+
+.text-secondary {
+  color: var(--text-white-1) !important;
+}
+
+.glass-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.55);
+}
+
+/* MEDIA QUERIES */
+/* Base styles (Mobile First) */
+/* Small screens (Tablets) */
+@media (min-width: 600px) {
+  .introduction .intro-profile {
+    width: 150px;
+  }
+}
+
+/* Medium screens (Laptops) */
+@media (min-width: 768px) {
+  .introduction .intro-name {
+    font-size: 1.5rem;
+  }
+  .introduction .intro-details {
+    font-size: 0.9rem;
+  }
+  .intro-btns {
+    font-size: 0.8rem;
+  }
+}
+
+/* Large screens (Desktops) */
+@media (min-width: 1024px) {
+  .introduction .intro-name {
+    font-size: 1.5rem;
+  }
+  .introduction .intro-details {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra-large screens (Big Monitors) */
+@media (min-width: 1440px) {
+  .introduction .intro-name {
+    font-size: 1.5rem;
+  }
+}
