@@ -3,7 +3,7 @@ import ProjectCard from "./ui/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className=" rounded-2">
+    <div className="rounded-2 p-3 glass-card border-secondary mb-3">
       <SectionTitle
         textStyle="mb-3"
         title="Projects I Made"
@@ -26,7 +26,7 @@ const Projects = () => {
         }
       />
 
-      <div className="row row-cols-1 row-cols-md-3 px-1">
+      <div className="row row-cols-1 row-cols-md-2 px-1">
         <div className="col mb-3 px-2">
           <ProjectCard title="QFlow App" />
         </div>

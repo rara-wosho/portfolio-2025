@@ -6,7 +6,7 @@ const PrimaryBtn = ({ label, containerStyle, icon }) => {
       className={`${containerStyle} px-2 px-md-3 py-2 pointer hover-glow bg-primary-linear rounded-2 text-white d-inline-flex align-items-center primary-btn`}
     >
       {icon && icon}
-      {label}
+      <p className="mb-0 fw-semibold text-secondary">{label}</p>
     </div>
   );
 };
