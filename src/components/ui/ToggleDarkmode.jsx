@@ -1,5 +1,5 @@
 import React from "react";
-import "./toggleDarkmode.css";
+import "./ToggleDarkmode.css";
 
 function ToggleDarkmode() {
   const setDarkmode = () => {
@@ -19,8 +19,6 @@ function ToggleDarkmode() {
   } else {
     setLightmode();
   }
-
-  console.log(selectedTheme);
 
   const toggleTheme = (e) => {
     if (e.target.checked) {

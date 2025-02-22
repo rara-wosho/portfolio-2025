@@ -3,7 +3,7 @@ import TechBadge from "./ui/TechBadge";
 
 const TechStack = () => {
   return (
-    <div className="glass-card p-3 rounded-2 border-secondary">
+    <div className="glass-card p-3 rounded-2 border-secondary shadow-sm">
       <SectionTitle
         title="Tech Stack"
         icon={
@@ -49,7 +49,7 @@ const TechStack = () => {
         <TechBadge label="Figma" />
         <TechBadge label="Git" />
         <TechBadge label="Jira" />
-        <TechBadge label="Trello" />
+        <TechBadge label="Cloudinary" />
       </div>
     </div>
   );

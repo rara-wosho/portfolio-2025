@@ -3,7 +3,7 @@ import ProjectCard from "./ui/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="rounded-2 p-3 glass-card border-secondary mb-3">
+    <div className="rounded-2 p-3 glass-card border-secondary mb-3 shadow-sm">
       <SectionTitle
         textStyle="mb-3"
         title="Projects I Made"
@@ -40,10 +40,16 @@ const Projects = () => {
           <ProjectCard title="Client Portfolio" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="Client Portfolio" />
+          <ProjectCard title="Library Digital Logbook" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="Client Portfolio" />
+          <ProjectCard title="UniNation" />
+        </div>
+        <div className="col mb-3 px-2">
+          <ProjectCard title="Expense Tracker App" />
+        </div>
+        <div className="col mb-3 px-2">
+          <ProjectCard title="FurniFlex" />
         </div>
       </div>
     </div>

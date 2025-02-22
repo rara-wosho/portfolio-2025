@@ -5,11 +5,12 @@ import AboutSection from "./components/AboutSection";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import Footer from "./components/Footer";
+import Versions from "./components/ui/Versions";
 
 function App() {
   return (
     <>
-      <div className="container main-container px-3 px-md-5 py-4">
+      <div className="container px-3 px-md-5 main-container position-relative">
         <Introduction />
         <AboutSection />
         <div className="row px-1">
@@ -22,6 +23,8 @@ function App() {
         </div>
 
         <Footer />
+
+        <Versions />
       </div>
     </>
   );
