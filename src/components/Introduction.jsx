@@ -13,7 +13,10 @@ const Introduction = () => {
         <img src="IMG_0188.JPG" alt="" className="img-fluid" />
       </div> */}
 
-      <div className="d-flex align-items-center introduction mb-3">
+      <div
+        data-aos="fade-down"
+        className="d-flex align-items-center introduction mb-3"
+      >
         <img
           src="/images/IMG_0188.JPG"
           alt="profile"
@@ -104,7 +107,11 @@ const Introduction = () => {
         </div>
       </div>
       {/* buttons  */}
-      <div style={{ gap: 5 }} className="d-flex align-items-center mb-4">
+      <div
+        data-aos="fade-right"
+        style={{ gap: 5 }}
+        className="d-flex align-items-center mb-4"
+      >
         <PrimaryBtn
           icon={
             <svg

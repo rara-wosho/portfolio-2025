@@ -8,7 +8,7 @@
   );
 
   --bg-secondary: rgba(17, 25, 40, 1);
-  --glass-bg-color: rgba(17, 25, 40, 0.2);
+  --glass-bg-color: rgba(17, 25, 40, 0.3);
   --bg-black: rgb(10, 10, 10);
   --bg-white: rgb(250, 250, 250);
   --text-white: rgb(248, 248, 248);
@@ -18,7 +18,7 @@
   --fs-7: 0.85rem;
 
   --border-width-1: 1px;
-  --border-secondary: 0.5px solid rgba(128, 128, 128, 0.1);
+  --border-secondary: 0.5px solid rgba(128, 128, 128, 0.2);
   --border: 1px solid rgb(89, 89, 100);
 
   --project-gradient: linear-gradient(
@@ -48,12 +48,13 @@
 
   --border-width-1: 1px;
   --border-secondary: 0.5px solid rgba(128, 128, 128, 0.2);
+  --border: 1px solid rgb(89, 89, 100);
 
   --project-gradient: linear-gradient(
     0deg,
-    rgb(248, 248, 248) 0%,
-    rgba(248, 248, 248, 0.7) 50%,
-    rgba(248, 248, 248, 0) 100%
+    rgba(240, 240, 240, 0.8) 0%,
+    rgba(240, 240, 240, 0.5) 40%,
+    rgba(240, 240, 240, 0) 100%
   );
 }
 
@@ -78,6 +79,8 @@ body {
   background-attachment: fixed;
   isolation: isolate;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body::after {
@@ -132,7 +135,7 @@ body::after {
 }
 
 .outline-btn {
-  border: var(--border-width-1) solid rgba(128, 128, 128, 0.612) !important;
+  border: var(--border-secondary) !important;
   box-sizing: content-box;
   position: relative;
   color: var(--text-white);
@@ -143,6 +146,12 @@ body::after {
   border: 1px solid transparent;
 }
 
+.project-card img {
+  transition: transform 0.5s;
+}
+.project-card:hover img {
+  transform: scale(105%);
+}
 .project-card .project-details {
   display: flex;
   flex-direction: column;

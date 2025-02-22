@@ -9,10 +9,10 @@ const Versions = () => {
     >
       {toggle && (
         <div className="actions">
-          <p className="px-3 py-2 bg-black border-secondary shadow rounded-2 mb-2">
+          <p className="px-3 py-2 bg-black fs-7 border-secondary shadow rounded-2 mb-2">
             Version 1
           </p>
-          <p className="px-3 py-2 bg-black border-secondary shadow rounded-2 mb-0">
+          <p className="px-3 py-2 bg-black fs-7 border-secondary shadow rounded-2 mb-0">
             Version 2
           </p>
         </div>

@@ -3,7 +3,11 @@ import ProjectCard from "./ui/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="rounded-2 p-3 glass-card border-secondary mb-3 shadow-sm">
+    <div
+      data-aos="fade-left"
+      data-aos-delay={200}
+      className="rounded-2 p-3 glass-card border-secondary mb-3 shadow-sm"
+    >
       <SectionTitle
         textStyle="mb-3"
         title="Projects I Made"
@@ -28,28 +32,31 @@ const Projects = () => {
 
       <div className="row row-cols-1 row-cols-md-2 px-1">
         <div className="col mb-3 px-2">
-          <ProjectCard title="QFlow App" />
+          <ProjectCard imgUrl="" title="QFlow App" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="Sabuag Portal" />
+          <ProjectCard imgUrl="/images/sabuag.PNG" title="Sabuag Portal" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="EventTasker" />
+          <ProjectCard imgUrl="/images/Capture8.PNG" title="EventTasker" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="Client Portfolio" />
+          <ProjectCard imgUrl="" title="Client Portfolio" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="Library Digital Logbook" />
+          <ProjectCard imgUrl="" title="Library Digital Logbook" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="UniNation" />
+          <ProjectCard imgUrl="/images/web-design.PNG" title="UniNation" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="Expense Tracker App" />
+          <ProjectCard
+            imgUrl="/images/capture9.PNG"
+            title="Expense Tracker App"
+          />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard title="FurniFlex" />
+          <ProjectCard imgUrl="/images/Capture4.PNG" title="FurniFlex" />
         </div>
       </div>
     </div>

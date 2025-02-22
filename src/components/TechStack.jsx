@@ -3,7 +3,10 @@ import TechBadge from "./ui/TechBadge";
 
 const TechStack = () => {
   return (
-    <div className="glass-card p-3 rounded-2 border-secondary shadow-sm">
+    <div
+      data-aos="fade-right"
+      className="glass-card p-3 rounded-2 border-secondary shadow-sm"
+    >
       <SectionTitle
         title="Tech Stack"
         icon={

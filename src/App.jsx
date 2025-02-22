@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Ensure you import the CSS for AOS effects
+
 import "./index.css";
 
 import Introduction from "./components/Introduction";
@@ -8,6 +12,12 @@ import Footer from "./components/Footer";
 import Versions from "./components/ui/Versions";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
       <div className="container px-3 px-md-5 main-container position-relative">
