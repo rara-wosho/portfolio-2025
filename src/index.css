@@ -7,8 +7,9 @@
     rgb(52, 11, 129) 100%
   );
 
+  --bg-gray: rgba(39, 59, 87, 0.2);
   --bg-secondary: rgba(17, 25, 40, 1);
-  --glass-bg-color: rgba(17, 25, 40, 0.3);
+  --glass-bg-color: rgba(24, 32, 47, 0.3);
   --bg-black: rgb(10, 10, 10);
   --bg-white: rgb(250, 250, 250);
   --text-white: rgb(248, 248, 248);
@@ -16,16 +17,17 @@
   --text-black: rgb(30, 30, 30);
 
   --fs-7: 0.85rem;
+  --fs-8: 0.75rem;
 
   --border-width-1: 1px;
-  --border-secondary: 0.5px solid rgba(128, 128, 128, 0.2);
+  --border-secondary: 0.5px solid rgba(128, 128, 128, 0.3);
   --border: 1px solid rgb(89, 89, 100);
 
   --project-gradient: linear-gradient(
     0deg,
-    rgb(12, 18, 30) 0%,
-    rgba(12, 18, 30, 0.7) 50%,
-    rgba(64, 27, 143, 0) 100%
+    rgb(34, 34, 44) 0%,
+    rgba(34, 34, 44, 0.5) 30%,
+    rgba(31, 31, 46, 0) 100%
   );
 }
 
@@ -36,13 +38,14 @@
     rgb(176, 145, 234) 100%
   );
 
+  --bg-gray: rgba(166, 174, 186, 0.2);
   --glass-bg-color: rgba(250, 250, 250, 0.5);
   --bg-secondary: rgb(188, 188, 188);
   --bg-white: rgb(10, 10, 10);
   --bg-black: rgb(250, 250, 250);
   --text-white: rgb(15, 15, 15);
   --text-white-1: rgb(20, 20, 20);
-  --text-black: rgb(30, 30, 30);
+  --text-black: rgb(240, 240, 240);
 
   --fs-7: 0.85rem;
 
@@ -52,9 +55,9 @@
 
   --project-gradient: linear-gradient(
     0deg,
-    rgba(240, 240, 240, 0.8) 0%,
-    rgba(240, 240, 240, 0.5) 40%,
-    rgba(240, 240, 240, 0) 100%
+    rgba(30, 30, 30, 0.8) 0%,
+    rgba(30, 30, 30, 0.5) 40%,
+    rgba(30, 30, 30, 0) 100%
   );
 }
 
@@ -111,9 +114,12 @@ body::after {
   bottom: 2.9rem;
   right: 0;
 }
-.versions-btn .actions p {
+.versions-btn .actions p,
+.versions-btn .actions a {
   display: inline-block;
   white-space: nowrap;
+  text-decoration: none;
+  color: var(--text-white);
 }
 .hero-section {
   min-height: 100vh;
@@ -162,14 +168,29 @@ body::after {
   background: var(--project-gradient);
   transition: height 0.3s;
   overflow: hidden;
+  padding-bottom: 12px;
 }
 
 .project-card:hover .project-details {
   height: 0;
 }
+
+.tech-badge {
+  color: var(--text-white-1);
+  padding-block: 2px;
+}
+
+.tech-badge:hover {
+  color: var(--text-black);
+  background-color: var(--bg-white);
+}
+
 /* UTILITY CLASS  */
 .fs-7 {
   font-size: var(--fs-7);
+}
+.fs-8 {
+  font-size: var(--fs-8);
 }
 
 .border-secondary {
@@ -181,6 +202,10 @@ body::after {
 }
 .bg-black {
   background-color: var(--bg-black) !important;
+}
+
+.bg-gray {
+  background-color: var(--bg-gray);
 }
 .border {
   border: var(--border) !important;

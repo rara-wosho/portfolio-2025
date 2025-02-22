@@ -9,9 +9,13 @@ const Versions = () => {
     >
       {toggle && (
         <div className="actions">
-          <p className="px-3 py-2 bg-black fs-7 border-secondary shadow rounded-2 mb-2">
+          <a
+            target="_blank"
+            href="https://raeldev.vercel.app"
+            className="px-3 py-2 bg-black fs-7 border-secondary shadow rounded-2 mb-2"
+          >
             Version 1
-          </p>
+          </a>
           <p className="px-3 py-2 bg-black fs-7 border-secondary shadow rounded-2 mb-0">
             Version 2
           </p>

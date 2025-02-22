@@ -6,7 +6,7 @@ const AboutSection = () => {
       data-aos="fade-right"
       data-aos-delay={100}
       data-aos-mirror={true}
-      className="border-secondary mb-3 p-3 glass-card rounded-2 shadow-sm"
+      className="border-secondary mb-3 p-3 glass-card rounded-3 shadow-sm"
     >
       <SectionTitle
         icon={

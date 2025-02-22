@@ -10,6 +10,8 @@ import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import Footer from "./components/Footer";
 import Versions from "./components/ui/Versions";
+import BeyondCoding from "./components/BeyondCoding";
+import Connect from "./components/Connect";
 
 function App() {
   useEffect(() => {
@@ -24,13 +26,16 @@ function App() {
         <Introduction />
         <AboutSection />
         <div className="row px-1">
-          <div className="px-2 col col-12 mb-3 mb-md-0 col-md-5">
+          <div className="px-2 col d-flex flex-column col-12 mb-3 mb-md-0 col-md-5">
             <TechStack />
+            <BeyondCoding />
           </div>
           <div className="px-2 col col-12 col-md-7">
             <Projects />
           </div>
         </div>
+
+        <Connect />
 
         <Footer />
 

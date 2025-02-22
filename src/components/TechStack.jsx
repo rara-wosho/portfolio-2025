@@ -5,7 +5,7 @@ const TechStack = () => {
   return (
     <div
       data-aos="fade-right"
-      className="glass-card p-3 rounded-2 border-secondary shadow-sm"
+      className="glass-card p-3 rounded-3 mb-3 border-secondary shadow-sm"
     >
       <SectionTitle
         title="Tech Stack"

@@ -4,9 +4,9 @@ import ProjectCard from "./ui/ProjectCard";
 const Projects = () => {
   return (
     <div
-      data-aos="fade-left"
+      data-aos="fade-up"
       data-aos-delay={200}
-      className="rounded-2 p-3 glass-card border-secondary mb-3 shadow-sm"
+      className="rounded-3 p-3 overflow-hidden glass-card border-secondary mb-3 shadow-sm"
     >
       <SectionTitle
         textStyle="mb-3"
