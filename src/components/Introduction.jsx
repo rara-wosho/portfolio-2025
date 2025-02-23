@@ -3,16 +3,9 @@ import OutlineBtn from "./ui/OutlineBtn";
 import TypingAnimation from "./ui/TypingAnimation";
 import ToggleDarkmode from "./ui/ToggleDarkmode";
 
-import { useState } from "react";
-
 const Introduction = () => {
-  const [showPic, setShowPic] = useState(false);
   return (
     <>
-      {/* <div style={{ width: 90 }} className="position-fixed ">
-        <img src="IMG_0188.JPG" alt="" className="img-fluid" />
-      </div> */}
-
       <div
         data-aos="fade-down"
         className="d-flex align-items-center introduction mb-3"
@@ -112,27 +105,29 @@ const Introduction = () => {
         style={{ gap: 5 }}
         className="d-flex align-items-center mb-4"
       >
-        <PrimaryBtn
-          icon={
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-mail me-1 me-md-2"
-            >
-              <rect width="20" height="16" x="2" y="4" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-          }
-          label="Contact Me"
-          containerStyle="intro-btns"
-        />
+        <a href="mailto:raeldevprojects@gmail.com">
+          <PrimaryBtn
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-mail me-1 me-md-2"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            }
+            label="Contact Me"
+            containerStyle="intro-btns"
+          />
+        </a>
         <a
           href="https://www.instagram.com/rae.zionn/"
           target="_blank"

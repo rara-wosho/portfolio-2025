@@ -32,7 +32,7 @@ const Projects = () => {
 
       <div className="row row-cols-1 row-cols-md-2 px-1">
         <div className="col mb-3 px-2">
-          <ProjectCard imgUrl="" title="QFlow App" />
+          <ProjectCard imgUrl="/images/qflow.png" title="QFlow App" />
         </div>
         <div className="col mb-3 px-2">
           <ProjectCard imgUrl="/images/sabuag.PNG" title="Sabuag Portal" />
@@ -41,7 +41,10 @@ const Projects = () => {
           <ProjectCard imgUrl="/images/Capture8.PNG" title="EventTasker" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard imgUrl="" title="Client Portfolio" />
+          <ProjectCard
+            imgUrl="/images/arbellera.PNG"
+            title="Client Portfolio"
+          />
         </div>
         <div className="col mb-3 px-2">
           <ProjectCard imgUrl="" title="Library Digital Logbook" />
