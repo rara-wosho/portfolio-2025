@@ -35,14 +35,14 @@ const Projects = () => {
           <ProjectCard imgUrl="/images/qflow.png" title="QFlow App" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard imgUrl="/images/sabuag.PNG" title="Sabuag Portal" />
+          <ProjectCard imgUrl="/images/sabuag-min.PNG" title="Sabuag Portal" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard imgUrl="/images/Capture8.PNG" title="EventTasker" />
+          <ProjectCard imgUrl="/images/Capture8-min.PNG" title="EventTasker" />
         </div>
         <div className="col mb-3 px-2">
           <ProjectCard
-            imgUrl="/images/arbellera.PNG"
+            imgUrl="/images/arbellera-min.PNG"
             title="Client Portfolio"
           />
         </div>
@@ -50,7 +50,7 @@ const Projects = () => {
           <ProjectCard imgUrl="" title="Library Digital Logbook" />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard imgUrl="/images/web-design.PNG" title="UniNation" />
+          <ProjectCard imgUrl="/images/web-design-min.PNG" title="UniNation" />
         </div>
         <div className="col mb-3 px-2">
           <ProjectCard
@@ -59,7 +59,7 @@ const Projects = () => {
           />
         </div>
         <div className="col mb-3 px-2">
-          <ProjectCard imgUrl="/images/Capture4.PNG" title="FurniFlex" />
+          <ProjectCard imgUrl="/images/Capture4-min.PNG" title="FurniFlex" />
         </div>
       </div>
     </div>

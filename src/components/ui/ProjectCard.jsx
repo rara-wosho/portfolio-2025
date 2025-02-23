@@ -19,7 +19,7 @@ const ProjectCard = ({ title, desc, imgUrl }) => {
             height: "100%",
             objectFit: "cover",
           }}
-          src={imgUrl ? imgUrl : "https://placehold.co/400"}
+          src={imgUrl ? imgUrl : "/images/placholderjpg.jpg"}
           alt="project"
         />
       </div>
