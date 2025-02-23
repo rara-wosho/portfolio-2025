@@ -1,9 +1,9 @@
 import React from "react";
 
-const ProjectCard = ({ title, desc, imgUrl }) => {
+const ProjectCard = ({ title, imgUrl }) => {
   return (
     <div
-      data-aos="fade-up"
+      // data-aos="fade-up"
       className="rounded-2 h-100 overflow-hidden project-card position-relative"
     >
       <div

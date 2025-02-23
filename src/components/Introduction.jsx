@@ -105,7 +105,10 @@ const Introduction = () => {
         style={{ gap: 5 }}
         className="d-flex align-items-center mb-4"
       >
-        <a href="mailto:raeldevprojects@gmail.com">
+        <a
+          className="text-decoration-none"
+          href="mailto:raeldevprojects@gmail.com"
+        >
           <PrimaryBtn
             icon={
               <svg

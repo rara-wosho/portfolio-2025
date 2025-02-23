@@ -3,9 +3,8 @@ import SectionTitle from "./ui/SectionTitle";
 const AboutSection = () => {
   return (
     <div
-      data-aos="fade-right"
+      data-aos="fade-left"
       data-aos-delay={100}
-      data-aos-mirror={true}
       className="border-secondary bg-hover-primary mb-3 p-3 glass-card rounded-3 shadow-sm"
     >
       <SectionTitle
