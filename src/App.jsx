@@ -25,7 +25,7 @@ function App() {
       <div className="container px-3 px-md-5 main-container position-relative">
         <Introduction />
         <AboutSection />
-        <div className="row px-1">
+        <div className="row px-1 mb-3">
           <div className="px-2 col d-flex flex-column col-12 mb-3 mb-md-0 col-md-5">
             <TechStack />
             <BeyondCoding />

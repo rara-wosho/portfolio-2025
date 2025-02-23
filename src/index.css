@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+  --clr-primary: rgba(105, 43, 218, 0.6);
   --bg-primary-linear: linear-gradient(
     30deg,
     rgb(142, 28, 28) 0%,
@@ -12,6 +13,12 @@
   --glass-bg-color: rgba(24, 32, 47, 0.3);
   --bg-black: rgb(10, 10, 10);
   --bg-white: rgb(250, 250, 250);
+
+  --text-gradient-color: linear-gradient(
+    90deg,
+    rgb(156, 35, 35),
+    rgb(106, 59, 193)
+  );
   --text-white: rgb(248, 248, 248);
   --text-white-1: rgb(220, 220, 220);
   --text-black: rgb(30, 30, 30);
@@ -29,6 +36,8 @@
     rgba(34, 34, 44, 0.5) 30%,
     rgba(31, 31, 46, 0) 100%
   );
+
+  --hover-primary: rgba(81, 41, 156, 0.08);
 }
 
 [data-theme="light"] {
@@ -43,6 +52,12 @@
   --bg-secondary: rgb(188, 188, 188);
   --bg-white: rgb(10, 10, 10);
   --bg-black: rgb(250, 250, 250);
+
+  --text-gradient-color: linear-gradient(
+    90deg,
+    rgb(142, 28, 28),
+    rgb(52, 11, 129)
+  );
   --text-white: rgb(15, 15, 15);
   --text-white-1: rgb(20, 20, 20);
   --text-black: rgb(240, 240, 240);
@@ -59,6 +74,7 @@
     rgba(30, 30, 30, 0.5) 40%,
     rgba(30, 30, 30, 0) 100%
   );
+  --hover-primary: rgba(250, 246, 255, 0.4);
 }
 
 * {
@@ -177,12 +193,11 @@ body::after {
 
 .tech-badge {
   color: var(--text-white-1);
-  padding-block: 2px;
 }
 
 .tech-badge:hover {
   color: var(--text-black);
-  background-color: var(--bg-white);
+  background-color: var(--bg-gray);
 }
 
 /* UTILITY CLASS  */
@@ -228,6 +243,15 @@ body::after {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 
+.bg-hover-primary {
+  transition: all 0.3s !important;
+}
+
+.bg-hover-primary:hover {
+  background: var(--hover-primary);
+  border-color: var(--clr-primary) !important;
+}
+
 .text-white {
   color: var(--text-white) !important;
 }
@@ -242,6 +266,12 @@ body::after {
   background-color: var(--glass-bg-color);
 }
 
+.text-gradient {
+  background: var(--text-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 /* MEDIA QUERIES */
 /* Base styles (Mobile First) */
 /* Small screens (Tablets) */

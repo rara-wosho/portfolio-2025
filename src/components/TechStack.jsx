@@ -5,7 +5,7 @@ const TechStack = () => {
   return (
     <div
       data-aos="fade-right"
-      className="glass-card p-3 rounded-3 mb-3 border-secondary shadow-sm"
+      className="glass-card p-3 bg-hover-primary rounded-3 mb-3 border-secondary shadow-sm"
     >
       <SectionTitle
         title="Tech Stack"
@@ -29,30 +29,69 @@ const TechStack = () => {
       />
 
       <p className="mb-2 fw-semibold mt-3 text-secondary fs-7">Frontend</p>
-      <div style={{ gap: 8 }} className="d-flex align-items-center flex-wrap">
-        <TechBadge label="React JS" />
-        <TechBadge label="React Native" />
-        <TechBadge label="Javascript" />
-        <TechBadge label="Tailwind CSS" />
-        <TechBadge label="Bootstrap" />
-        <TechBadge label="HTML" />
-        <TechBadge label="CSS" />
-        <TechBadge label="Material UI" />
+      <div className="row row-cols-4 px-2">
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/physics.png" label="React JS" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/physics.png" label="React Native" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/js.png" label="Javascript" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge
+            logo="/logo/icons8-tailwind-css-48.png"
+            label="Tailwind CSS"
+          />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/bootstrap.png" label="Bootstrap" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/html.png" label="HTML" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/css-3.png" label="CSS" />
+        </div>
       </div>
+
       <p className="mb-2 fw-semibold mt-3 text-secondary fs-7">Backend</p>
-      <div style={{ gap: 8 }} className="d-flex align-items-center flex-wrap">
-        <TechBadge label="PHP" />
-        <TechBadge label="MySQL" />
-        <TechBadge label="Java" />
-        <TechBadge label="Rest API" />
-        <TechBadge label="Firebase" />
+      <div className="row row-cols-4 px-2">
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/php.png" label="PHP" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/java.png" label="Java" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/mysql.png" label="MySQL" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/icons8-firebase-48.png" label="Firebase" />
+        </div>
       </div>
+
       <p className="mb-2 fw-semibold mt-3 text-secondary fs-7">Others</p>
-      <div style={{ gap: 8 }} className="d-flex align-items-center flex-wrap">
-        <TechBadge label="Figma" />
-        <TechBadge label="Git" />
-        <TechBadge label="Jira" />
-        <TechBadge label="Cloudinary" />
+      <div className="row row-cols-4 px-2">
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/figma.png" label="Figma" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge logo="/logo/github.png" label="Github" />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge
+            logo="/logo/cloudinary-removebg-preview.png"
+            label="Cloudinary"
+          />
+        </div>
+        <div className="col mb-2 px-1">
+          <TechBadge
+            logo="/logo/icons8-material-ui-48.png"
+            label="Material UI"
+          />
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const Projects = () => {
     <div
       data-aos="fade-up"
       data-aos-delay={200}
-      className="rounded-3 p-3 overflow-hidden glass-card border-secondary mb-3 shadow-sm"
+      className="rounded-3 p-3 h-100 bg-hover-primary overflow-hidden glass-card border-secondary shadow-sm"
     >
       <SectionTitle
         textStyle="mb-3"
