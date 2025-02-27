@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCard = ({ title, imgUrl }) => {
   return (
     <div
-      // data-aos="fade-up"
+      data-aos="fade-left"
       className="rounded-2 h-100 overflow-hidden project-card position-relative"
     >
       <div

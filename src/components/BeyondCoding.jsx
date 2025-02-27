@@ -5,6 +5,7 @@ const BeyondCoding = () => {
     <div
       data-aos="fade-right"
       data-aos-delay={100}
+      data-aos-duration={1000}
       className="glass-card shadow-sm bg-hover-primary p-3 d-flex flex-column border-secondary h-100  rounded-3"
     >
       <SectionTitle

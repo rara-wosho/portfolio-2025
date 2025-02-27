@@ -3,7 +3,8 @@ const Connect = () => {
   return (
     <div
       data-aos="fade-up"
-      className="p-3 bg-hover-primary glass-card rounded-3 border-secondary overflow-hidden"
+      data-aos-delay={200}
+      className="p-3 h-100 bg-hover-primary glass-card rounded-3 border-secondary overflow-hidden"
     >
       <SectionTitle
         title="Connect"
@@ -29,8 +30,8 @@ const Connect = () => {
         }
       />
 
-      <div className="row row-cols-1 px-2 row-cols-md-2 mt-3">
-        <div className="col px-1 d-flex flex-column">
+      <div className="row row-cols-1 px-2 mt-3">
+        <div className="col mb-3 px-1 d-flex flex-column">
           <div
             data-aos="fade-right"
             style={{ paddingInline: 12 }}
