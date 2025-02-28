@@ -31,17 +31,14 @@ const Timeline = () => {
       />
 
       <div className="wrapper d-flex flex-column position-relative">
-        <TimelineCard year={2022} text="Learned HTML & CSS" />
-        <TimelineCard
-          containerStyle="mb-3"
-          text="Wrote my first Hello World using JAVA programming language"
-        />
+        <TimelineCard year={2024} text="React Native & Expo" />
+        <TimelineCard text="Firebase" />
+        <TimelineCard containerStyle="mb-3" text="Tailwind CSS" />
         <TimelineCard year={2023} text="PHP & MySQL" />
         <TimelineCard text="Javascript & React JS library" />
         <TimelineCard containerStyle="mb-3" text="Bootstrap" />
-        <TimelineCard year={2024} text="React Native & Expo" />
-        <TimelineCard text="Firebase" />
-        <TimelineCard text="Tailwind CSS" />
+        <TimelineCard year={2022} text="Learned HTML & CSS" />
+        <TimelineCard text="Wrote my first Hello World using JAVA programming language" />
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ const Projects = () => {
 
       <div className="row row-cols-1 row-cols-md-2 px-1">
         <div className="col mb-3 px-2">
-          <ProjectCard imgUrl="/images/qflow.png" title="QFlow App" />
+          <ProjectCard imgUrl="/images/qflow.jpg" title="QFlow App" />
         </div>
         <div className="col mb-3 px-2">
           <ProjectCard imgUrl="/images/sabuag-min.PNG" title="Sabuag Portal" />
@@ -54,7 +54,7 @@ const Projects = () => {
         </div>
         <div className="col mb-3 px-2">
           <ProjectCard
-            imgUrl="/images/capture9.PNG"
+            imgUrl="/images/Untitled design.png"
             title="Expense Tracker App"
           />
         </div>

@@ -114,7 +114,7 @@ body::after {
 .main-container {
   width: 100%;
   max-width: 1000px;
-  padding-top: 2.2rem;
+  padding-top: 1.5rem;
 }
 
 .versions-btn {
