@@ -82,7 +82,7 @@
   font-weight: 400;
   font-style: normal;
   color: var(--text-white);
-  transition: all 0.1s;
+  transition: all 0.4s;
 }
 
 .text-montserrat {

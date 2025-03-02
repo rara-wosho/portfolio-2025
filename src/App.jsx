@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container px-3 px-md-5 pb-3 main-container position-relative">
+    <div className="container px-3 px-md-5 main-container position-relative">
       <Introduction />
       <AboutSection />
       <div className="row px-1 mb-3">

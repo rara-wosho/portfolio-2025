@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
-    <div className="glass-card px-3 rounded border-secondary mt-3 py-4 d-flex align-items-center">
+    <div
+      style={{ borderTop: "var(--border-secondary)" }}
+      className="mt-4 py-4 d-flex align-items-center"
+    >
       <img
         style={{ width: 14, height: 14, objectFit: "contain" }}
         src="/logo/physics.png"
