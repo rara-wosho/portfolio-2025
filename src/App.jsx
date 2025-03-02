@@ -13,6 +13,7 @@ import Versions from "./components/ui/Versions";
 import BeyondCoding from "./components/BeyondCoding";
 import Connect from "./components/Connect";
 import Timeline from "./components/Timeline";
+import Commission from "./components/Commission";
 
 function App() {
   useEffect(() => {
@@ -22,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container px-3 px-md-5 main-container position-relative">
+    <div className="container px-3 px-md-5 pb-3 main-container position-relative">
       <Introduction />
       <AboutSection />
       <div className="row px-1 mb-3">
@@ -39,14 +40,15 @@ function App() {
         <div className="col px-2 mb-3 mb-md-0">
           <Timeline />
         </div>
-        <div className="col px-2">
+        <div className="col px-2 flex-1">
           <Connect />
+          <Commission />
         </div>
       </div>
 
       <Footer />
 
-      <Versions />
+      {/* <Versions /> */}
     </div>
   );
 }

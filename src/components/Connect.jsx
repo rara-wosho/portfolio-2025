@@ -1,12 +1,14 @@
+import Goal from "./Goal";
 import SectionTitle from "./ui/SectionTitle";
 const Connect = () => {
   return (
     <div
       data-aos="fade-up"
       data-aos-delay={200}
-      className="p-3 h-100 bg-hover-primary glass-card rounded-3 border-secondary overflow-hidden"
+      className="px-3 pt-3 pb-1 mb-3 bg-hover-primary glass-card rounded-3 border-secondary overflow-hidden"
     >
       <SectionTitle
+        textStyle="mb-3"
         title="Connect"
         icon={
           <svg
@@ -30,107 +32,108 @@ const Connect = () => {
         }
       />
 
-      <div className="row row-cols-1 px-2 mt-3">
-        <div className="col mb-3 px-1 d-flex flex-column">
-          <div
-            data-aos="fade-right"
-            style={{ paddingInline: 12 }}
-            className="d-flex bg-gray rounded-2 flex-column py-2 mb-2"
-          >
-            <p className="mb-0 d-flex text-secondary fs-8">
-              Email
-              <span className="ms-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-arrow-right"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </p>
-            <p className="mb-0 text-secondary fs-7 fw-semibold">
-              raeldevprojects@gmail.com
-            </p>
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay={100}
-            style={{ paddingInline: 12 }}
-            className="d-flex bg-gray rounded-2 flex-column py-2 mb-2"
-          >
-            <p className="mb-0 d-flex text-secondary fs-8">
-              Instagram
-              <span className="ms-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-arrow-right"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </p>
-            <p className="mb-0 text-secondary fs-7 fw-semibold">rae.zionn</p>
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay={200}
-            style={{ paddingInline: 12 }}
-            className="d-flex bg-gray rounded-2 flex-column py-2 mb-2 mb-md-0"
-          >
-            <p className="mb-0 d-flex text-secondary fs-8">
-              Facebook
-              <span className="ms-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-arrow-right"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </p>
-            <p className="mb-0 text-secondary fs-7 fw-semibold">Rael De Vera</p>
-          </div>
-        </div>
-        <div className="col px-1">
-          <div data-aos="fade-left" className="bg-gray rounded p-3 h-100">
-            <p className="mb-2 text-secondary fw-semibold">
-              Speaking Engagements
-            </p>
-            <p className="mb-0 text-secondary fs-7">
-              I'm always excited to dive into discussions about tech stacks,
-              coding, and exploring new ideas—especially when I get the chance
-              to learn from others and expand my knowledge.
-            </p>
-          </div>
-        </div>
+      <div className="mb-3 d-flex flex-column">
+        <a
+          href="emailto:raeldevprojects@gmail.com"
+          data-aos="fade-right"
+          style={{ paddingInline: 12, textDecoration: "none" }}
+          className="d-flex glass-card rounded-2 flex-column py-2 mb-2"
+        >
+          <p className="mb-0 d-flex text-secondary fs-8">
+            Email
+            <span className="ms-auto">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-arrow-right"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </p>
+          <p className="mb-0 text-secondary fs-7 fw-semibold">
+            raeldevprojects@gmail.com
+          </p>
+        </a>
+        <a
+          href="https://www.instagram.com/rae.zionn/"
+          data-aos="fade-right"
+          data-aos-delay={100}
+          style={{ paddingInline: 12, textDecoration: "none" }}
+          className="d-flex glass-card rounded-2 flex-column py-2 mb-2"
+        >
+          <p className="mb-0 d-flex text-secondary fs-8">
+            Instagram
+            <span className="ms-auto">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-arrow-right"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </p>
+          <p className="mb-0 text-secondary fs-7 fw-semibold">rae.zionn</p>
+        </a>
+        <a
+          href="https://www.facebook.com/rae.zionn"
+          data-aos="fade-right"
+          data-aos-delay={200}
+          style={{ paddingInline: 12, textDecoration: "none" }}
+          className="d-flex glass-card rounded-2 flex-column py-2 mb-2 mb-md-0"
+        >
+          <p className="mb-0 d-flex text-secondary fs-8">
+            Facebook
+            <span className="ms-auto">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-arrow-right"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </p>
+          <p className="mb-0 text-secondary fs-7 fw-semibold">Rael De Vera</p>
+        </a>
       </div>
+
+      <div data-aos="fade-left" className="glass-card rounded p-3 mb-3">
+        <p className="mb-2 text-secondary fw-semibold">Speaking Engagements</p>
+        <p className="mb-0 text-secondary fs-7">
+          I'm always excited to dive into discussions about tech stacks, coding,
+          and exploring new ideas—especially when I get the chance to learn from
+          others and expand my knowledge.
+        </p>
+      </div>
+
+      <SectionTitle textStyle="mb-2 mt-2" title="Goal" />
+      <Goal />
     </div>
   );
 };

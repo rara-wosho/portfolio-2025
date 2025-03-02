@@ -1,13 +1,17 @@
 const Footer = () => {
   return (
-    <div className="border-top mt-5 py-4 d-flex">
-      <p className="mb-0 fs-8">Rael De Vera@2025.</p>
+    <div className="glass-card px-3 rounded border-secondary mt-3 py-4 d-flex align-items-center">
       <img
-        style={{ width: 15, height: 15, objectFit: "contain" }}
+        style={{ width: 14, height: 14, objectFit: "contain" }}
         src="/logo/physics.png"
-        className="ms-2"
+        className="me-2"
       />
-      <p className="mb-0 fs-8 ms-auto">V2</p>
+      <p className="mb-0 fs-8 text-uppercase fw-semibold text-secondary">
+        Israel De Vera
+      </p>
+      <p className="mb-0 fs-8 ms-auto text-uppercase fw-semibold text-secondary">
+        V2
+      </p>
     </div>
   );
 };

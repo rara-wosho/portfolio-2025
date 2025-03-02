@@ -211,11 +211,11 @@ body::after {
   border-radius: 1vw;
   background: linear-gradient(
     0deg,
-    rgba(255, 0, 0, 0.08) 0%,
+    rgba(255, 0, 0, 0.05) 0%,
     rgba(255, 0, 0, 0.34) 15%,
     rgb(102, 33, 116) 50%,
     purple 85%,
-    rgba(128, 0, 128, 0.086) 100%
+    rgba(128, 0, 128, 0.03) 100%
   );
 }
 
@@ -249,6 +249,9 @@ body::after {
 }
 
 /* UTILITY CLASS  */
+.bg-none {
+  background-color: transparent;
+}
 .fs-7 {
   font-size: var(--fs-7);
 }
@@ -285,7 +288,7 @@ body::after {
 }
 
 .bg-hover-primary {
-  transition: background-color 0.3s;
+  transition: border 0.3s;
 }
 
 .bg-hover-primary:hover {
