@@ -2,15 +2,14 @@ import React from "react";
 
 const Commission = () => {
   return (
-    <div
-      data-aos="fade-left"
-      className="p-3 rounded glass-card bg-hover-primary border-secondary"
-    >
-      <p className="mb-3 fw-semibold text-secondary">
+    <div className="p-3 rounded glass-card bg-hover-primary border-secondary overflow-hidden">
+      <p data-aos="fade-left" className="mb-3 fw-semibold text-secondary">
         Want to have a portfolio like this?
       </p>
 
       <a
+        data-aos="fade-left"
+        data-aos-delay={50}
         style={{ textDecoration: "none" }}
         href="https://www.facebook.com/rae.zionn"
         className="rounded-2 text-secondary  p-3 glass-card d-flex align-items-center"
