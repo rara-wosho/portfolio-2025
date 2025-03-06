@@ -27,38 +27,6 @@ const Introduction = () => {
             </div>
           </div>
 
-          <p className="mb-1 text-secondary text-montserrat fw-semibold intro-details">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-briefcase-business me-2"
-            >
-              <path d="M12 12h.01" />
-              <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-              <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-              <rect width="20" height="14" x="2" y="6" rx="2" />
-            </svg>
-            Aspiring{" "}
-            <TypingAnimation
-              typingSpeed={40}
-              deletingSpeed={20}
-              delay={1800}
-              textStyle="text-danger fw-semibold"
-              words={[
-                "Full-Stack Developer",
-                "Entrepreneur",
-                "Software Engineer",
-              ]}
-            />
-          </p>
-
           <p className="mb-1 text-montserrat text-secondary intro-details mb-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,6 +45,25 @@ const Introduction = () => {
               <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
             </svg>
             BS Information Technology
+          </p>
+
+          <p className="mb-1 text-secondary text-montserrat intro-details">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-mail me-2"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            raeldevprojects@gmail.com
           </p>
 
           <p className="mb-1 text-montserrat text-secondary intro-details mb-1">
@@ -100,6 +87,7 @@ const Introduction = () => {
         </div>
       </div>
       {/* buttons  */}
+
       <div
         data-aos="fade-right"
         style={{ gap: 5 }}

@@ -1,4 +1,5 @@
 import SectionTitle from "./ui/SectionTitle";
+import TypingAnimation from "./ui/TypingAnimation";
 
 const AboutSection = () => {
   return (
@@ -27,6 +28,17 @@ const AboutSection = () => {
         }
         title="About"
       />
+
+      <p className="mb-1 pt-3 pb-0 text-secondary text-montserrat fw-semibold">
+        Aspiring{" "}
+        <TypingAnimation
+          typingSpeed={40}
+          deletingSpeed={20}
+          delay={1800}
+          textStyle="text-danger fw-semibold"
+          words={["Full-Stack Developer", "Entrepreneur", "Software Engineer"]}
+        />
+      </p>
 
       <p style={{ lineHeight: 2 }} className="mb-0 text-secondary fs-7 mt-3">
         A former BSBA-MM student with an interest in entrepreneurship, but ended
