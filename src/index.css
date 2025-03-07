@@ -294,6 +294,15 @@ body::after {
   z-index: 15;
 }
 
+.sticky-navbar {
+  top: 8px;
+  left: 0;
+  position: sticky;
+  z-index: 100;
+  transition: all 0.3s;
+  gap: 5px;
+}
+
 /* UTILITY CLASS  */
 .bg-none {
   background-color: transparent;
