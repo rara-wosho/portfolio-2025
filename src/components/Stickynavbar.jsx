@@ -13,7 +13,7 @@ const Stickynavbar = ({ setSidebar }) => {
       const scrollPosition = window.scrollY;
 
       // If scrolled past threshold, make sticky
-      if (scrollPosition > 10) {
+      if (scrollPosition > 110) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -121,6 +121,7 @@ const Stickynavbar = ({ setSidebar }) => {
       </a>
 
       <div
+        data-aos="fade-left"
         onClick={() => setSidebar((s) => !s)}
         className="sidebar-icon ms-auto"
       >
