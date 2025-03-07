@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+  --bg-dark: rgba(17, 25, 40, 1);
   --sidebar-width: 300px;
   --clr-primary: rgba(105, 43, 218, 0.6);
   --bg-primary-linear: linear-gradient(
@@ -42,6 +43,7 @@
 }
 
 [data-theme="light"] {
+  --bg-dark: rgb(240, 240, 248);
   --bg-primary-linear: linear-gradient(
     30deg,
     rgb(199, 72, 72) 0%,
@@ -120,7 +122,7 @@ body::after {
   top: 0;
   display: flex;
   justify-content: end;
-  background-color: rgba(5, 0, 19, 0.6);
+  background-color: rgba(16, 16, 17, 0.6);
   animation: fade-opacity 0.3s ease-out;
 }
 
@@ -333,6 +335,10 @@ body::after {
 }
 .pointer {
   cursor: pointer;
+}
+
+.bg-dark {
+  background-color: var(--bg-dark) !important;
 }
 
 .bg-secondary {
