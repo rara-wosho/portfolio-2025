@@ -31,13 +31,10 @@ const Stickynavbar = ({ setSidebar }) => {
   return (
     <div
       className={`d-flex align-items-center sticky-navbar mb-1 py-2 py-md-3 rounded-3 ${
-        isSticky
-          ? "sticky-active shadow-sm px-2 border-secondary px-md-3 glass-card"
-          : ""
+        isSticky ? "sticky-active shadow-sm px-2 px-md-3 glass-card" : ""
       }`}
     >
       <a
-        data-aos="fade-right"
         className="text-decoration-none"
         href="mailto:raeldevprojects@gmail.com"
       >
@@ -64,7 +61,6 @@ const Stickynavbar = ({ setSidebar }) => {
         />
       </a>
       <a
-        data-aos="fade-right"
         href="https://www.instagram.com/rae.zionn/"
         target="_blank"
         className="p-0 btn"
@@ -93,7 +89,6 @@ const Stickynavbar = ({ setSidebar }) => {
         />
       </a>
       <a
-        data-aos="fade-right"
         href="https://www.facebook.com/rae.zionn"
         target="_blank"
         className="p-0 btn"
@@ -121,7 +116,6 @@ const Stickynavbar = ({ setSidebar }) => {
       </a>
 
       <div
-        data-aos="fade-left"
         onClick={() => setSidebar((s) => !s)}
         className="sidebar-icon ms-auto"
       >
