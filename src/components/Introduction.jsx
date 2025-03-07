@@ -3,7 +3,7 @@ import OutlineBtn from "./ui/OutlineBtn";
 import TypingAnimation from "./ui/TypingAnimation";
 import ToggleDarkmode from "./ui/ToggleDarkmode";
 
-const Introduction = () => {
+const Introduction = ({ setSidebar }) => {
   return (
     <>
       <div
@@ -173,6 +173,28 @@ const Introduction = () => {
             containerStyle="intro-btns"
           />
         </a>
+
+        <div
+          onClick={() => setSidebar((s) => !s)}
+          className="sidebar-icon ms-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-menu"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </div>
       </div>
     </>
   );

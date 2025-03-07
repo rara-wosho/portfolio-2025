@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Ensure you import the CSS for AOS effects
 
@@ -14,8 +14,10 @@ import BeyondCoding from "./components/BeyondCoding";
 import Connect from "./components/Connect";
 import Timeline from "./components/Timeline";
 import Commission from "./components/Commission";
+import Sidebar from "./components/Sidebar";
 
 function App() {
+  const [open, setSidebar] = useState(false);
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -24,7 +26,9 @@ function App() {
 
   return (
     <div className="container px-3 px-md-5 main-container position-relative">
-      <Introduction />
+      {open && <Sidebar setSidebar={setSidebar} />}
+
+      <Introduction setSidebar={setSidebar} />
       <AboutSection />
       <div className="row px-1 mb-3">
         <div className="px-2 col d-flex flex-column col-12 mb-3 mb-md-0 col-md-5">
