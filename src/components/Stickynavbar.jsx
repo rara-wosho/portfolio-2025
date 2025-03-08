@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import PrimaryBtn from "./ui/PrimaryBtn";
 import OutlineBtn from "./ui/OutlineBtn";
+import GlowingBtn from "./ui/GlowingBtn";
 
 const Stickynavbar = ({ setSidebar }) => {
   const [isSticky, setIsSticky] = useState(false);
@@ -30,7 +31,7 @@ const Stickynavbar = ({ setSidebar }) => {
 
   return (
     <div
-      className={`d-flex align-items-center sticky-navbar mb-1 py-2 py-md-3 rounded-3 ${
+      className={`d-flex align-items-center sticky-navbar mb-1 py-2 py-md-3 rounded-3 fade-opacity ${
         isSticky ? "sticky-active shadow-sm px-2 px-md-3 glass-card" : ""
       }`}
     >
@@ -38,7 +39,8 @@ const Stickynavbar = ({ setSidebar }) => {
         className="text-decoration-none"
         href="mailto:raeldevprojects@gmail.com"
       >
-        <PrimaryBtn
+        <GlowingBtn
+          label="Contact Me"
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,8 +58,6 @@ const Stickynavbar = ({ setSidebar }) => {
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
           }
-          label="Contact Me"
-          containerStyle="intro-btns"
         />
       </a>
       <a

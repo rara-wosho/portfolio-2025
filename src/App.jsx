@@ -17,15 +17,30 @@ import Commission from "./components/Commission";
 import Sidebar from "./components/Sidebar";
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const [open, setSidebar] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+  // if (loading)
+  //   return (
+  //     <div className="loading-screen d-flex align-items-center justify-content-center glass-card">
+  //       loading
+  //     </div>
+  //   );
+
   return (
-    <div className="container px-3 px-md-5 main-container position-relative">
+    <div className="mx-auto px-3 px-md-5 main-container position-relative fade-opacity">
       {open && <Sidebar setSidebar={setSidebar} />}
 
       <Introduction setSidebar={setSidebar} />

@@ -5,7 +5,7 @@ const Connect = () => {
     <div
       data-aos="fade-up"
       data-aos-delay={200}
-      className="px-3 pt-3 pb-1 mb-3 bg-hover-primary glass-card rounded-3 border-secondary overflow-hidden"
+      className="px-3 pt-3 pb-1 mb-3 glass-card rounded-3 border-secondary overflow-hidden"
     >
       <SectionTitle
         textStyle="mb-3"
@@ -35,7 +35,7 @@ const Connect = () => {
       <div className="mb-3 d-flex flex-column">
         <a
           href="emailto:raeldevprojects@gmail.com"
-          data-aos="fade-right"
+          data-aos="fade-left"
           style={{ paddingInline: 12, textDecoration: "none" }}
           className="d-flex glass-card rounded-2 flex-column py-2 mb-2"
         >
@@ -65,7 +65,7 @@ const Connect = () => {
         </a>
         <a
           href="https://www.instagram.com/rae.zionn/"
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-delay={100}
           style={{ paddingInline: 12, textDecoration: "none" }}
           className="d-flex glass-card rounded-2 flex-column py-2 mb-2"
@@ -94,7 +94,7 @@ const Connect = () => {
         </a>
         <a
           href="https://www.facebook.com/rae.zionn"
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-delay={200}
           style={{ paddingInline: 12, textDecoration: "none" }}
           className="d-flex glass-card rounded-2 flex-column py-2 mb-2 mb-md-0"

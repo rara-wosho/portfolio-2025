@@ -2,7 +2,10 @@ import React from "react";
 
 const Sidebar = ({ setSidebar }) => {
   return (
-    <div onClick={() => setSidebar((s) => !s)} className="backdrop--sidebar">
+    <div
+      onClick={() => setSidebar((s) => !s)}
+      className="backdrop--sidebar fade-opacity"
+    >
       <div className="--sidebar overflow-hidden h-100 bg-dark p-3 shadow">
         <div className="d-flex align-items-center">
           <img

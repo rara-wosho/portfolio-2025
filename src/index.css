@@ -12,6 +12,7 @@
 
   --bg-gray: rgb(20, 28, 41);
   --bg-secondary: rgba(17, 25, 40, 1);
+  --bg-rotating: rgba(17, 25, 40, 1);
   --glass-bg-color: rgba(24, 32, 47, 0.3);
   --bg-black: rgb(10, 10, 10);
   --bg-white: rgb(250, 250, 250);
@@ -40,6 +41,14 @@
   );
 
   --hover-primary: rgba(81, 41, 156, 0.08);
+  --rotating-border: linear-gradient(
+    90deg,
+    rgba(255, 244, 244, 1) 0%,
+    rgb(106, 59, 193) 50%,
+    rgb(82, 28, 182) 60%,
+    rgba(255, 248, 248, 0.6) 80%,
+    rgba(255, 248, 248, 0.6) 100%
+  );
 }
 
 [data-theme="light"] {
@@ -51,6 +60,7 @@
   );
 
   --bg-gray: rgba(219, 223, 230, 0.7);
+  --bg-rotating: rgb(250, 250, 250);
   --glass-bg-color: rgba(250, 250, 250, 0.5);
   --bg-secondary: rgb(188, 188, 188);
   --bg-white: rgb(10, 10, 10);
@@ -123,7 +133,9 @@ body::after {
   display: flex;
   justify-content: end;
   background-color: rgba(16, 16, 17, 0.6);
-  animation: fade-opacity 0.3s ease-out;
+}
+.fade-opacity {
+  animation: fade-opacity 0.4s ease-out;
 }
 
 @keyframes fade-opacity {
@@ -165,6 +177,9 @@ body::after {
   padding-top: 1.5rem;
 }
 
+.loading-screen {
+  height: 100vh;
+}
 .versions-btn {
   z-index: 100;
   bottom: 1rem;
@@ -305,6 +320,44 @@ body::after {
   gap: 5px;
 }
 
+/* glowing primary button  */
+/* glowing badge button  */
+.glowing-badge-container,
+.glowing-primary-btn-container {
+  isolation: isolate;
+  padding: 1px;
+}
+.glowing-badge-container:hover .glowing-border {
+  animation-play-state: paused;
+}
+.glowing-badge-container .glowing-text {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-rotating);
+}
+
+.glowing-border {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: -5rem;
+  left: -2rem;
+  background: var(--rotating-border);
+  animation: rotate 3s linear infinite;
+  z-index: -1;
+}
+
+.glowing-primary-btn {
+  background: var(--bg-primary-linear);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* UTILITY CLASS  */
 .bg-none {
   background-color: transparent;

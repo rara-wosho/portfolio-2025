@@ -1,3 +1,4 @@
+import GlowingBadge from "./ui/GlowingBadge";
 import SectionTitle from "./ui/SectionTitle";
 import TypingAnimation from "./ui/TypingAnimation";
 
@@ -6,7 +7,7 @@ const AboutSection = () => {
     <div
       data-aos="fade-left"
       data-aos-delay={100}
-      className="border-secondary bg-hover-primary mb-3 p-3 glass-card rounded-3 shadow-sm"
+      className="border-secondary mb-3 p-3 glass-card rounded-3 shadow-sm"
     >
       <SectionTitle
         icon={
@@ -51,6 +52,14 @@ const AboutSection = () => {
         impact. My journey into the world of technology began with a fascination
         for the endless possibilities it offers to shape the future.
       </p>
+
+      <p className="mb-0 fs-8 text-uppercase mt-3 mb-2 text-danger">
+        Specializing in
+      </p>
+      <div style={{ gap: 6 }} className="d-flex align-items-center">
+        <GlowingBadge label="Web Development" />
+        <GlowingBadge label="App Development" />
+      </div>
     </div>
   );
 };
