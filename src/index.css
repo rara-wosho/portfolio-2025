@@ -343,7 +343,7 @@ body::after {
   top: -5rem;
   left: -2rem;
   background: var(--rotating-border);
-  animation: rotate 3s linear infinite;
+  animation: rotate 4s linear infinite;
   z-index: -1;
 }
 
