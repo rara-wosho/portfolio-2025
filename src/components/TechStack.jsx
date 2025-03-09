@@ -4,7 +4,7 @@ import TechBadge from "./ui/TechBadge";
 const TechStack = () => {
   return (
     <div
-      data-aos="fade-right"
+      // data-aos="fade-right"
       className="glass-card p-3 bg-hover-primary rounded-3 mb-3 border-secondary shadow-sm"
     >
       <div className="d-flex align-items-center">

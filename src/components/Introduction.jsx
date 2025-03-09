@@ -8,7 +8,7 @@ const Introduction = ({ setSidebar }) => {
   return (
     <>
       <div
-        data-aos="fade-down"
+        // data-aos="fade-down"
         className="d-flex align-items-center introduction mb-3"
       >
         <img

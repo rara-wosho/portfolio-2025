@@ -3,8 +3,8 @@ import SectionTitle from "./ui/SectionTitle";
 const Connect = () => {
   return (
     <div
-      data-aos="fade-up"
-      data-aos-delay={200}
+      // data-aos="fade-up"
+      // data-aos-delay={200}
       className="px-3 pt-3 pb-1 mb-3 glass-card rounded-3 border-secondary overflow-hidden"
     >
       <SectionTitle
@@ -35,7 +35,7 @@ const Connect = () => {
       <div className="mb-3 d-flex flex-column">
         <a
           href="emailto:raeldevprojects@gmail.com"
-          data-aos="fade-left"
+          // data-aos="fade-left"
           style={{ paddingInline: 12, textDecoration: "none" }}
           className="d-flex glass-card rounded-2 flex-column py-2 mb-2"
         >
@@ -65,8 +65,8 @@ const Connect = () => {
         </a>
         <a
           href="https://www.instagram.com/rae.zionn/"
-          data-aos="fade-left"
-          data-aos-delay={100}
+          // data-aos="fade-left"
+          // data-aos-delay={100}
           style={{ paddingInline: 12, textDecoration: "none" }}
           className="d-flex glass-card rounded-2 flex-column py-2 mb-2"
         >
@@ -94,8 +94,8 @@ const Connect = () => {
         </a>
         <a
           href="https://www.facebook.com/rae.zionn"
-          data-aos="fade-left"
-          data-aos-delay={200}
+          // data-aos="fade-left"
+          // data-aos-delay={200}
           style={{ paddingInline: 12, textDecoration: "none" }}
           className="d-flex glass-card rounded-2 flex-column py-2 mb-2 mb-md-0"
         >
@@ -123,7 +123,10 @@ const Connect = () => {
         </a>
       </div>
 
-      <div data-aos="fade-left" className="glass-card rounded p-3 mb-3">
+      <div
+        //  data-aos="fade-left"
+        className="glass-card rounded p-3 mb-3"
+      >
         <p className="mb-2 text-secondary fw-semibold">Speaking Engagements</p>
         <p className="mb-0 text-secondary fs-7">
           I'm always excited to dive into discussions about tech stacks, coding,

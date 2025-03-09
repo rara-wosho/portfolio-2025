@@ -5,7 +5,7 @@ import TimelineCard from "./ui/TimelineCard";
 const Timeline = () => {
   return (
     <div
-      data-aos="fade-up"
+      // data-aos="fade-up"
       className="p-3 timeline-section overflow-hidden bg-hover-primary border-secondary h-100 glass-card rounded-3"
     >
       <SectionTitle

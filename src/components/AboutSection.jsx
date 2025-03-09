@@ -5,8 +5,8 @@ import TypingAnimation from "./ui/TypingAnimation";
 const AboutSection = () => {
   return (
     <div
-      data-aos="fade-left"
-      data-aos-delay={100}
+      // data-aos="fade-left"
+      // data-aos-delay={100}
       className="border-secondary mb-3 p-3 glass-card rounded-3 shadow-sm"
     >
       <SectionTitle

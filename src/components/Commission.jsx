@@ -3,13 +3,16 @@ import GlowingBtn from "./ui/GlowingBtn";
 const Commission = () => {
   return (
     <div className="p-3 rounded glass-card bg-hover-primary border-secondary overflow-hidden">
-      <p data-aos="fade-left" className="mb-3 fw-semibold text-secondary">
+      <p
+        // data-aos="fade-left"
+        className="mb-3 fw-semibold text-secondary"
+      >
         Want to have a portfolio like this?
       </p>
 
       <a
-        data-aos="fade-left"
-        data-aos-delay={50}
+        // data-aos="fade-left"
+        // data-aos-delay={50}
         style={{ textDecoration: "none" }}
         href="https://www.facebook.com/rae.zionn"
         className="text-secondary d-flex align-items-center"

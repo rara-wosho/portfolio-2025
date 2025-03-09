@@ -6,7 +6,7 @@ const TimelineCard = ({ text, year, containerStyle }) => {
       className={`d-flex justify-content-center align-items-center timeline-card position-relative  ${containerStyle}`}
     >
       <div
-        data-aos="fade-left"
+        // data-aos="fade-left"
         style={{ maxWidth: 400, zIndex: 20 }}
         className="timeline-card-wrapper w-100 ps-4"
       >

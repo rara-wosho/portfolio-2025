@@ -4,8 +4,8 @@ import ProjectCard from "./ui/ProjectCard";
 const Projects = () => {
   return (
     <div
-      data-aos="fade-up"
-      data-aos-delay={200}
+      // data-aos="fade-up"
+      // data-aos-delay={200}
       className="rounded-3 p-3 h-100 bg-hover-primary overflow-hidden glass-card border-secondary shadow-sm"
     >
       <div className="d-flex align-items-center mb-3">

@@ -1,6 +1,9 @@
 const Goal = () => {
   return (
-    <div data-aos="fade-up" className="glass-card rounded p-3 mb-3">
+    <div
+      //  data-aos="fade-up"
+      className="glass-card rounded p-3 mb-3"
+    >
       <p className="mb-0 text-secondary fs-7">
         As I continue my journey in web development, I am excited to dive deeper
         into the <strong>MERN stack</strong>—a powerful combination of
