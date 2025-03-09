@@ -1,8 +1,10 @@
 import React from "react";
 
-const GlowingBtn = ({ label, icon }) => {
+const GlowingBtn = ({ label, icon, containerStyle }) => {
   return (
-    <div className="glowing-primary-btn-container overflow-hidden position-relative rounded-3">
+    <div
+      className={`${containerStyle} glowing-primary-btn-container overflow-hidden position-relative rounded-3`}
+    >
       <div className="glowing-border"></div>
       <div className="glowing-primary-btn pointer px-2 px-md-3 rounded-3 py-1 py-md-2 d-flex align-items-center">
         {icon && icon}

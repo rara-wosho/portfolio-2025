@@ -32,7 +32,9 @@ const Stickynavbar = ({ setSidebar }) => {
   return (
     <div
       className={`d-flex align-items-center sticky-navbar mb-1 py-2 py-md-3 rounded-3 fade-opacity ${
-        isSticky ? "sticky-active shadow-sm px-2 px-md-3 glass-card" : ""
+        isSticky
+          ? "sticky-active shadow-sm px-2 px-md-3 glass-card border-secondary"
+          : ""
       }`}
     >
       <a
@@ -117,7 +119,7 @@ const Stickynavbar = ({ setSidebar }) => {
 
       <div
         onClick={() => setSidebar((s) => !s)}
-        className="sidebar-icon ms-auto"
+        className="sidebar-icon ms-auto pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
