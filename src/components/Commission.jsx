@@ -32,6 +32,7 @@ const Commission = () => {
             </svg>
           }
           containerStyle="w-100"
+          textStyle="py-2"
           label="Message Me"
         />
         <div className="border-secondary p-2 ms-2 rounded-circle d-flex align-items-center justify-content-center">

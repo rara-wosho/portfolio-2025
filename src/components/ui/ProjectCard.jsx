@@ -19,8 +19,9 @@ const ProjectCard = ({ title, imgUrl }) => {
             height: "100%",
             objectFit: "cover",
           }}
-          src={imgUrl ? imgUrl : "/images/placholderjpg.jpg"}
-          alt="project"
+          // src={imgUrl ? imgUrl : "/images/placholderjpg.jpg"}
+          src=""
+          alt="maintenance"
         />
       </div>
 
