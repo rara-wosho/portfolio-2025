@@ -31,9 +31,9 @@ const Stickynavbar = ({ setSidebar }) => {
 
   return (
     <div
-      className={`d-flex align-items-center sticky-navbar mb-1 py-2 py-md-3 rounded-3 fade-opacity ${
+      className={`d-flex align-items-center sticky-navbar mb-1 py-2 py-md-3 rounded fade-opacity ${
         isSticky
-          ? "sticky-active shadow-sm px-2 px-md-3 glass-card border-secondary"
+          ? "sticky-active shadow-sm px-2 pe-3 px-md-3 glass-card border-secondary"
           : ""
       }`}
     >

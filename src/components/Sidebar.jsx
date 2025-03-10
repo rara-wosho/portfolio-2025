@@ -32,8 +32,8 @@ const Sidebar = ({ setSidebar }) => {
           </svg>
         </div>
 
-        <p className="mb-0 text-secondary fs-7 mt-3 text-nowrap">
-          Contents are currently not available
+        <p className="mb-0 text-secondary fs-7 mt-3 text-nowrap fs-8 mt-2">
+          This portfolio is currently under maintenance.
         </p>
       </div>
     </div>

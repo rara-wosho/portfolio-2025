@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Ensure you import the CSS for AOS effects
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 import "./index.css";
 
@@ -19,11 +19,11 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [open, setSidebar] = useState(false);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
 
   useEffect(() => {
     setTimeout(() => {
