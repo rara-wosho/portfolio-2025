@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProjectCard = ({ title, imgUrl }) => {
   return (
     <div
@@ -19,9 +17,8 @@ const ProjectCard = ({ title, imgUrl }) => {
             height: "100%",
             objectFit: "cover",
           }}
-          // src={imgUrl ? imgUrl : "/images/placholderjpg.jpg"}
-          src=""
-          alt="maintenance"
+          src={imgUrl ? imgUrl : "/images/placholderjpg.jpg"}
+          alt="img"
         />
       </div>
 
@@ -32,7 +29,6 @@ const ProjectCard = ({ title, imgUrl }) => {
         >
           {title}
         </p>
-        {/* <p className="mb-0 text-secondary fs-7">Lorem ipsum dolor sit.</p> */}
       </div>
     </div>
   );

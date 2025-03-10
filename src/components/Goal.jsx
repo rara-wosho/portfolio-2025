@@ -6,8 +6,7 @@ const Goal = () => {
     >
       <p className="mb-0 text-secondary fs-7">
         As I continue my journey in web development, I am excited to dive deeper
-        into the <strong>MERN stack</strong>—a powerful combination of
-        technologies that includes:
+        into the <strong>MERN stack</strong>
       </p>
 
       <ul className="list-group fs-7 text-secondary">

@@ -64,8 +64,6 @@ function App() {
         </div>
 
         <Footer />
-
-        {/* <Versions /> */}
       </div>
     </>
   );

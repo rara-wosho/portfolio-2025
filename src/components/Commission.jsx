@@ -2,7 +2,7 @@ import GlowingBtn from "./ui/GlowingBtn";
 
 const Commission = () => {
   return (
-    <div className="p-3 rounded glass-card bg-hover-primary border-secondary overflow-hidden">
+    <div className="p-3 rounded-3 glass-card bg-hover-primary border-secondary overflow-hidden">
       <p
         // data-aos="fade-left"
         className="mb-3 fw-semibold text-secondary"

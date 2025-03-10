@@ -51,8 +51,8 @@ const Introduction = ({ setSidebar }) => {
           <p className="mb-1 text-secondary text-montserrat intro-details">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
+              width="13"
+              height="13"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

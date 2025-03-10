@@ -253,7 +253,7 @@ body::after {
   position: relative;
   color: var(--text-white);
   background: var(--glass-bg-color);
-  padding: 10px;
+  padding: 11px;
 }
 
 .primary-btn {
@@ -292,44 +292,6 @@ body::after {
   background-color: var(--bg-gray);
 }
 
-/* TIMELINNE  */
-
-/* .timeline-section .wrapper::after {
-  position: absolute;
-  content: "";
-  width: 2px;
-  height: 100%;
-  left: 6px;
-  border-radius: 1vw;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 0, 0, 0.05) 0%,
-    rgba(255, 0, 0, 0.34) 15%,
-    rgb(102, 33, 116) 50%,
-    purple 85%,
-    rgba(128, 0, 128, 0.03) 100%
-  );
-} */
-
-/* .timeline-card-wrapper:nth-child(odd) {
-  transform: translateX(-2rem);
-}
-.timeline-card-wrapper:nth-child(even) {
-  transform: translateX(2rem);
-} */
-/* .timeline-card::before {
-  content: "";
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  top: 50%;
-  border-radius: 1vw;
-  left: 2px;
-  transform: translateY(-50%);
-  background: var(--bg-primary-linear);
-  z-index: 15;
-} */
-
 .rounded-3 {
   border-top-right-radius: 18px !important;
   border-top-left-radius: 8px !important;
@@ -338,19 +300,6 @@ body::after {
   position: relative;
 }
 
-/* .rounded-3.dot {
-  border-top-right-radius: 32px !important;
-}
-.rounded-3.dot::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 5px;
-  border-radius: 100vw;
-  width: 5px;
-  background-color: var(--bg-white);
-} */
 .sticky-navbar {
   top: 8px;
   left: 0;

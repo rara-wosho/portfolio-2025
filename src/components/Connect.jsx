@@ -31,7 +31,6 @@ const Connect = () => {
           </svg>
         }
       />
-
       <div className="mb-3 d-flex flex-column">
         <a
           href="emailto:raeldevprojects@gmail.com"
@@ -122,7 +121,6 @@ const Connect = () => {
           <p className="mb-0 text-secondary fs-7 fw-semibold">Rael De Vera</p>
         </a>
       </div>
-
       <div
         //  data-aos="fade-left"
         className="glass-card rounded p-3 mb-3"
@@ -134,7 +132,6 @@ const Connect = () => {
           others and expand my knowledge.
         </p>
       </div>
-
       <SectionTitle
         icon={
           <svg
