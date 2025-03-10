@@ -114,11 +114,11 @@
 
 body {
   height: 100vh;
-  /* background-image: url("/images/4844484.jpg");
+  background-image: url("/images/4844484.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed;
   isolation: isolate;
   position: relative;
   overflow-x: hidden;
@@ -404,11 +404,6 @@ body::after {
   transition: border 0.3s;
 }
 
-/* .bg-hover-primary:hover {
-  background: var(--hover-primary);
-  border-color: var(--clr-primary) !important;
-} */
-
 .text-white {
   color: var(--text-white) !important;
 }
@@ -461,19 +456,10 @@ body::after {
 
 /* Large screens (Desktops) */
 @media (min-width: 1024px) {
-  /* .introduction .intro-name {
-    font-size: 1.5rem;
-  }
-  .introduction .intro-details {
-    font-size: 0.9rem;
-  } */
 }
 
 /* Extra-large screens (Big Monitors) */
 @media (min-width: 1440px) {
-  /* .introduction .intro-name {
-    font-size: 1.5rem;
-  } */
 }
 
 /* LOADING  */
