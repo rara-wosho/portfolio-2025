@@ -16,57 +16,58 @@ import Commission from "./components/Commission";
 import Sidebar from "./components/Sidebar";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const [open, setSidebar] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const [open, setSidebar] = useState(false);
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //   });
-  // }, []);
+    // useEffect(() => {
+    //   AOS.init({
+    //     duration: 1000,
+    //   });
+    // }, []);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+    }, []);
 
-  return (
-    <>
-      {loading && (
-        <div className="loading-screen d-flex align-items-center justify-content-center bg-secondary">
-          <div class="chaotic-orbit"></div>
-        </div>
-      )}
-      <div className="mx-auto px-3 px-md-5 main-container position-relative fade-opacity">
-        {open && <Sidebar setSidebar={setSidebar} />}
+    return (
+        <>
+            {loading && (
+                <div className="loading-screen d-flex align-items-center justify-content-center bg-secondary">
+                    <div class="chaotic-orbit"></div>
+                </div>
+            )}
+            <div className="mx-auto px-3 px-md-5 main-container position-relative fade-opacity">
+                {open && <Sidebar setSidebar={setSidebar} />}
 
-        <Introduction setSidebar={setSidebar} />
-        <AboutSection />
-        <div className="row px-1 mb-3">
-          <div className="px-2 col d-flex flex-column col-12 mb-3 mb-md-0 col-md-5">
-            <TechStack />
-            <BeyondCoding />
-          </div>
-          <div className="px-2 col col-12 col-md-7">
-            <Projects />
-          </div>
-        </div>
+                <Introduction setSidebar={setSidebar} />
 
-        <div className="row row-cols-1 row-cols-md-2 px-1 mb-3">
-          <div className="col px-2 mb-3 mb-md-0">
-            <Timeline />
-          </div>
-          <div className="col px-2 flex-1">
-            <Connect />
-            <Commission />
-          </div>
-        </div>
+                <AboutSection />
+                <div className="row px-1 mb-3">
+                    <div className="px-2 col d-flex flex-column col-12 mb-3 mb-md-0 col-md-5">
+                        <TechStack />
+                        <BeyondCoding />
+                    </div>
+                    <div className="px-2 col col-12 col-md-7">
+                        <Projects />
+                    </div>
+                </div>
 
-        <Footer />
-      </div>
-    </>
-  );
+                <div className="row row-cols-1 row-cols-md-2 px-1 mb-3">
+                    <div className="col px-2 mb-3 mb-md-0">
+                        <Timeline />
+                    </div>
+                    <div className="col px-2 flex-1">
+                        <Connect />
+                        <Commission />
+                    </div>
+                </div>
+
+                <Footer />
+            </div>
+        </>
+    );
 }
 
 export default App;
